@@ -34,3 +34,6 @@ puts binary_search(135, test_array) == 35
 
 test_array = [13, 19, 24, 29, 32, 37, 43]
 puts binary_search(9, test_array) 
+
+a = [1,2,3,4,5,6]
+puts binary_search(3, a)

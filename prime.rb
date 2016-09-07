@@ -1,19 +1,36 @@
 require 'byebug'
 
+# def prime_factors(num)
+#   divider = 2
+#   array = []
+
+#     until num == 1
+#       if num % divider == 0
+#         num /= divider
+#         array << divider
+#       else
+#         divider += 1
+#       end
+#     end
+#     p array
+# end
+
 def prime_factors(num)
   divider = 2
   array = []
 
     until num == 1
       if num % divider == 0
-        num /= divider
+        
         array << divider
+        num = num / divider
       else
         divider += 1
       end
     end
     p array
 end
+
 
 prime_factors(3) # => [3]
 prime_factors(6) # => [2,3]
